@@ -1,10 +1,6 @@
 #ifndef __FREERTOS_PLUS_CPP_LOCK_H__
 #define __FREERTOS_PLUS_CPP_LOCK_H__
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 #include <Arduino_FreeRTOS.h>
 #include <semphr.h>
 
@@ -91,9 +87,5 @@ class UniqueLock {
   SemaphoreHandle_t mutex_handle_;
   bool owns_;
 };
-
-#ifdef __cplusplus
-}
-#endif
 
 #endif  // __FREERTOS_PLUS_CPP_LOCK_H__
